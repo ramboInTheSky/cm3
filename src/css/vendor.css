@@ -1,0 +1,23 @@
+/**
+ * Created by alessiofimognari on 11/05/2017.
+ */
+@import 'common_lib/src/css/index.css';
+@import 'common_lib/src/css/vendor.css';
+@import '~material-design-icons-iconfont/dist/fonts/material-icons.css';
+
+
+.draggable_modal-footer{
+    position: relative;
+}
+
+.mdl-option__list{
+    max-height: 80vh;
+}
+
+.mdl-checkbox{
+    height: 28px;
+}
+
+.mdl-selectfield{
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es2015",
+      "es2017",
+      "dom",
+      "scripthost"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "allowUnreachableCode": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noLib": false,
+    "jsx": "react",
+    "outDir": "dist",
+    "allowJs": false,
+    "baseUrl": "",
+    "paths": {
+      "*": [
+        "types/*",
+        "node_modules/@types/*"
+      ]
+    },
+    "typeRoots": [
+      "./types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "static",
+    "dist"
+  ]
+}

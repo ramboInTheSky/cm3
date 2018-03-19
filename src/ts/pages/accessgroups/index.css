@@ -1,0 +1,119 @@
+@import '../../../css/variables.css';
+
+.accessGroup_modal{
+    max-width: 846px;
+    min-width: 600px;
+    height: 622px;
+    width:70%;
+}
+
+/*@media (min-width: 1000px) {
+  .accessGroup_modal{
+    left:17%;
+    }
+}
+@media (min-width: 1200px) {
+  .accessGroup_modal{
+    left:25%;
+    }
+}*/
+
+.accessGroup_modal .mdl-autocomplete, .accessGroup_modal .mdl-textfield{
+    width: 100%
+}
+
+.accessGroup_modal_right_section{
+    height: 70%;
+}
+
+.acadia-add-item-icon, .acadia-add-item-icon-disabled{
+    position: relative;
+    font-size: 1.5rem;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #999;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.acadia-add-item-icon-disabled{
+    cursor:not-allowed;
+}
+.acadia-add-item-icon:hover{
+    color: var(--coal-color);
+}
+
+.acadia-default-access_group-info{
+    position: relative;
+    top: 5px;
+    left: 0;
+    margin-bottom: 20px;
+}
+
+/*.acadia-divider--horizonal{
+    margin-right: 30px;
+}*/
+
+.acadia-accessgroup-expanded-detail_wrapper .mdl-checkbox{
+    margin-top: 0;
+}
+
+/*.acadia-accessgroup-expanded-detail_wrapper .acadia-ca-checkbox-row{
+    margin-bottom:0;
+}*/
+
+.allEntitiesSelected a{
+    color: var(--lightest-grey) !important;
+}
+
+.acadia-accessgroup-expanded-detail_wrapper .acadia-divider--horizonal{
+        border-bottom: solid 0.063rem #efefef;
+}
+
+.functional_button{
+    display: -webkit-inline-box;
+    float:right
+}
+
+.org_entities_functional_button{
+}
+
+.functional_button div{
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 9px;
+    padding-left: 5px;
+    height: 20px;
+    padding-right: 5px;
+    transition-property: background, border, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.add_button{
+    color: #fff;
+    border: 1px solid var(--light-grey);
+    background-color:var(--light-grey);
+}
+.add_button:hover{
+    color: #fff;
+    background-color: var(--dark-grey);
+}
+
+.clear_button{
+    color: var(--dark-grey);
+    padding-top: 1px;
+}
+.clear_button:hover{
+    background-color: var(--lightest-grey);
+}
+
+.entityelement{
+    text-align: left;
+     list-style-type: none; 
+    font-size: 16px;
+    padding-left: 10px;
+}

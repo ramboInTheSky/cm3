@@ -1,0 +1,6 @@
+init.author.name = _Alz
+init.author.email = alessio.fimognari@acadiasoft.com
+email=alessio.fimognari@acadiasoft.com
+always-auth=true
+_auth=your credentials here base64-encoded
+registry = https://nexus3.acadiasoft.net/repository/npm-group/

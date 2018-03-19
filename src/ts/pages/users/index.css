@@ -1,0 +1,49 @@
+@import '../../../css/variables.css';
+.user_modal {
+    max-width: 846px;
+    min-width: 600px;
+    height: 622px;
+    width: 70%;
+}
+
+
+/*@media (min-width: 1000px) {
+  .user_modal{
+    left:17%;
+    }
+}
+@media (min-width: 1200px) {
+  .user_modal{
+    left:25%;
+    }
+}*/
+
+.user_modal .mdl-autocomplete,
+.user_modal .mdl-textfield {
+    width: 100%
+}
+
+.user_modal_right_section {
+    height: 70%;
+}
+
+.user_modal .acadia-accessgroup-expanded-detail_wrapper {
+    max-height: 360px;
+}
+
+.acadia-disable_user_pwd_reset {
+    position: absolute;
+    bottom: 75px;
+    left: 39%;
+    width: 150px;
+}
+
+.acadia-disable_user_pwd_reset .mdl-checkbox__label {
+    font-size: 14px;
+    padding-top: 1px;
+    margin-left: -4px;
+}
+
+.notification-message {
+    word-break: normal !important;
+}

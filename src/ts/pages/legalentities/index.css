@@ -1,0 +1,69 @@
+@import '../../../css/variables.css';
+
+.legalEntity_modal{
+    max-width: 846px;
+    min-width: 600px;
+    height: 622px;
+    width: 70%;
+}
+
+/*@media (min-width: 1000px) {
+  .legalEntity_modal{
+    left:17%;
+    }
+}
+@media (min-width: 1200px) {
+  .legalEntity_modal{
+    left:25%;
+    }
+}*/
+
+.legalEntity_modal .mdl-autocomplete, .legalEntity_modal .mdl-textfield{
+    width: 100%
+}
+
+.legalEntity_modal_right_section{
+    height: 70%;
+}
+
+.acadia-add-item-icon, .acadia-add-item-icon-disabled{
+    position: relative;
+    font-size: 1.5rem;
+    right: 2rem;
+    top: 0.8rem;
+    cursor: pointer;
+    color: var(--light-grey);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.acadia-add-item-icon:hover{
+    color: var(--coal-color);
+}
+.acadia-chip-col{
+    /*height: 20%;
+    overflow-y:auto;*/
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: calc(3*var(--gutter));
+}
+.acadia-chip-col-last{
+    margin-bottom: var(--gutter);
+    text-align: left;
+}
+
+.acadia-chip{
+    height: 22px;
+    font-family: Avenir;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.acadia-chip i{
+    font-size: 14px;
+    line-height: 0;
+}
+
+.acadia-ca-checkbox-row{
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+}

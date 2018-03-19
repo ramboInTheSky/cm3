@@ -1,0 +1,64 @@
+ @import 'common_lib/src/css/_variables.css';
+ .acadia-checkbox-pane {
+     position: absolute;
+     /*left: 150;
+     top: 100;*/
+     background: #fff;
+     z-index: 100;
+     padding: var(--root-size);
+     box-shadow: var(--modal-shadow);
+     border-left: 7px solid var(--primary-color);
+     border-radius: var(--modal-border-radius);
+     overflow-x: auto;
+     overflow-y: hidden;
+     min-width: 17rem;
+ }
+
+ .acadia-checkbox-pane .mdl-checkbox {
+     margin-top: 0.3125rem;
+     margin-left: 0.625rem;
+     overflow: hidden;
+ }
+
+ .acadia-checkbox-pane-vertical {
+     max-width: 60%;
+     max-height: 85%;
+     overflow-x: hidden;
+     overflow-y: auto;
+ }
+
+ .acadia-checkbox-pane-horizontal {
+     max-width: 90%;
+     max-height: 65%;
+     overflow-x: auto;
+     overflow-y: hidden;
+ }
+
+ .acadia-checkbox-pane--header {
+     font-size: 1rem;
+     font-family: Avenir Bold;
+     color: var(--grid-header-color);
+     display: inline-block;
+     margin-bottom: 0.640rem;
+     margin-top: -0.375rem;
+     /* -6px compensation for using 16px base rem gutter -> design wants 10px gutter for the header*/
+     margin-left: -0.375rem;
+     /*-6px compensation for using 16px base rem gutter -> design wants 10px gutter for the header*/
+ }
+
+ .acadia-checkbox-pane--row {
+     padding: 0 0.625rem;
+     padding-right: 1.563rem;
+ }
+
+ .acadia-checkbox-pane--cell {
+     width: 100%;
+     min-width: 7.5rem;
+ }
+
+ .acadia-checkbox-pane--footer {
+     float: right;
+     position: relative;
+     margin-top: 1.25rem;
+     z-index: 110;
+ }

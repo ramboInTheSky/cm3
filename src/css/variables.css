@@ -1,0 +1,14 @@
+/**
+ * Created by alessiofimognari on 11/05/2017.
+ */
+ @import 'common_lib/src/css/_variables.css';
+
+:root {
+  --activeColor: #00746B;
+  --detail_panel_top: var(--header-top-gutter);
+  --detail-panel-height: 100vh;
+  --detail-panel-width: 450px; 
+  --detail-panel-box-shadow: var(--header-shadow);
+
+  --reduced-grid-size: 100%;
+}
