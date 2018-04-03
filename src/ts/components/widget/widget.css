@@ -1,0 +1,43 @@
+.widget {
+    /*background-color: #fff;
+   
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;*/
+    height: inherit;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.widget-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    height: 2rem;
+    width: 100%;
+    background-color: #999;
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    word-wrap: none;
+}
+
+.widget-header span {
+    padding: 7px 10px;
+    display: inline-block;
+}
+
+.widget-body {
+    height: 100%;
+    display: inline-block;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: auto;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+

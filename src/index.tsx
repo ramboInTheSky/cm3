@@ -22,32 +22,31 @@ import './css/index.css'
 /*First Party*/
 import {settings} from './app.settings'
 import { stores } from './ts/stores';
-import {Users} from './ts/pages/users'
-import {LegalEntities} from './ts/pages/legalentities'
-import {AccessGroups} from './ts/pages/accessgroups'
-import {Roles} from './ts/pages/roles'
+import {AppShellProps} from './ts/models'
+
+import {Portfolios} from './ts/pages/portfolios'
+import {DashboardPage} from './ts/pages/dashboard'
+
 
 const history = createBrowserHistory();
 const mobxSyncedHistory = syncHistoryWithStore(history, stores.routing);
 
-const appShellProps = {
+const appShellProps: AppShellProps = {
     menu: settings.modules,
     new:settings.newActions,
-    title:"Client Admin",
-    userInfoURL: settings.urls.userinfo,
-    logoutURL: settings.urls.logout,
+    title:"collateral manager",
+    userInfoURL: '',
+    logoutURL: '',
     showLastLogin: true
 }
 
-
 ReactDOM.render(
     <Provider {...stores}>
-        <Router basename="/clientadmin">
+        <Router basename="/collateralmanager">
             <div>
-                <Route exact path="/" component={() => <Users hasActionBar={true} {...appShellProps} />}/>
-                <Route exact path="/r/entities" component={() => <LegalEntities hasActionBar={true} {...appShellProps} />} />
-                <Route exact path="/r/accessgroups" component={() => <AccessGroups hasActionBar={true} {...appShellProps} />} />
-                <Route exact path="/r/permissiongroups" component={() => <Roles hasActionBar={true} {...appShellProps} />} />
+                <Route exact path="/" component={() => <DashboardPage {...appShellProps} />}/>
+                <Route exact path="/r/portfolios" component={() => <Portfolios hasActionBar={true} {...appShellProps} />}/>
+
                 {/*<Route exact path="/r/entities/:orgId" component={(props) => <Entities {...props} />} />*/}
             </div>
         </Router>

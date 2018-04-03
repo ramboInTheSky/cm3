@@ -112,7 +112,7 @@ module.exports = {
 
             }),
         new HtmlWebpackPlugin({
-            title: 'Client Admin',
+            title: 'Collateral Manager',
             xhtml: true,
             favicon: './src/favicon.ico',
             template: path.join(path.join(__dirname, 'src'), 'html-template.ejs'),

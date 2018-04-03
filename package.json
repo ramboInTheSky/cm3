@@ -1,7 +1,7 @@
 {
   "name": "client-admin",
   "version": "1.0.6",
-  "description": "client admin",
+  "description": "Collateral Manager",
   "scripts": {
     "start": "node server.js",
     "start-prod": "rm -rf dist/* && NODE_ENV=production node server.js",
@@ -50,11 +50,13 @@
     "webpack-dev-server": "2.4.5"
   },
   "dependencies": {
+    "@types/react-grid-layout": "^0.16.4",
     "codemirror": "5.24.2",
-    "common_lib": "^3.6.26-Alpha-16",
+    "common_lib": "^3.7.0-Alpha-8",
     "downloadjs": "1.4.7",
     "material-design-icons-iconfont": "3.0.3",
     "react-beautiful-dnd": "4.0.1",
+    "react-grid-layout": "^0.16.6",
     "react-toolbox": "2.0.0-beta.12",
     "uuid": "3.0.1"
   }

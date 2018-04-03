@@ -15,16 +15,16 @@ new WebpackDevServer(webpack(config), {
   // proxy all backend requests to "mockBackend" express app below
   proxy: {
     "/collateralmanager/s/*": {
-      target: "http://localhost:3001"
-      // target: "http://localhost:9031"
+      target: "http://localtest:3001"
+      // target: "http://localtest:9031"
     },
     "/collateralmanager/ws/*": {
-      target: "ws://localhost:3001",
-      // target: "ws://localhost:9031",
+      target: "ws://localtest:3001",
+      // target: "ws://localtest:9031",
       ws: true
     },
     "/collateralmanager/r/*": {
-      target: "http://localhost:3000/collateralmanager",
+      target: "http://localtest:3000/collateralmanager",
       pathRewrite: {
         "^/collateralmanager/r/.*": "/"
       }
@@ -32,12 +32,13 @@ new WebpackDevServer(webpack(config), {
     }
   }
 
-}).listen(3000, '0.0.0.0', function (err, result) {
+// }).listen(3000, '0.0.0.0', function (err, result) {
+}).listen(3000, 'localtest', function (err, result) {
   if (err) {
     console.log(err);
   }
 
-  console.log('Listening at localhost:3000');
+  console.log('Listening at localtest:3000');
 });
 
 // setup a separate express server for serving up mock endpoints.
